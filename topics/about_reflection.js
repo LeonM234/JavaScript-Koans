@@ -1,7 +1,7 @@
 module("About Reflection (topics/about_reflection.js)");
 
 var A = function() {
-    this.aprop = "A";    
+    this.aprop = "A";  
 };
 
 var B = function() {
@@ -11,10 +11,10 @@ var B = function() {
 B.prototype = new A();
 
 test("typeof", function() {
-    equal(__, typeof({}), 'what is the type of an empty object?');
-    equal(__, typeof('apple'), 'what is the type of a string?');
-    equal(__, typeof(-5), 'what is the type of -5?');
-    equal(__, typeof(false), 'what is the type of false?');		
+    equal("object", typeof({}), 'what is the type of an empty object?');
+    equal("string", typeof('apple'), 'what is the type of a string?');
+    equal("number", typeof(-5), 'what is the type of -5?');
+    equal("boolean", typeof(false), 'what is the type of false?');		
 });
 
 test("property enumeration", function() {
